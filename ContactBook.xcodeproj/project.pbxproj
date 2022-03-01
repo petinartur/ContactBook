@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		750D859C27BADB12003A72C3 /* ContaListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D859B27BADB12003A72C3 /* ContaListController.swift */; };
+		7524532227CE2CF400ECE9D6 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7524532127CE2CF400ECE9D6 /* PersonInfoViewController.swift */; };
 		7527933327BACEDF002648D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7527933227BACEDF002648D4 /* AppDelegate.swift */; };
 		7527933527BACEDF002648D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7527933427BACEDF002648D4 /* SceneDelegate.swift */; };
 		7527933A27BACEDF002648D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7527933827BACEDF002648D4 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		750D859B27BADB12003A72C3 /* ContaListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaListController.swift; sourceTree = "<group>"; };
+		7524532127CE2CF400ECE9D6 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		7527932F27BACEDF002648D4 /* ContactBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7527933227BACEDF002648D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7527933427BACEDF002648D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				7527933227BACEDF002648D4 /* AppDelegate.swift */,
 				7527933427BACEDF002648D4 /* SceneDelegate.swift */,
 				750D859B27BADB12003A72C3 /* ContaListController.swift */,
+				7524532127CE2CF400ECE9D6 /* PersonInfoViewController.swift */,
 				7527933827BACEDF002648D4 /* Main.storyboard */,
 				7527933B27BACEDF002648D4 /* Assets.xcassets */,
 				7527933D27BACEDF002648D4 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				7527934927BAD278002648D4 /* DataManager.swift in Sources */,
 				7527933327BACEDF002648D4 /* AppDelegate.swift in Sources */,
 				7527934727BAD167002648D4 /* Person.swift in Sources */,
+				7524532227CE2CF400ECE9D6 /* PersonInfoViewController.swift in Sources */,
 				750D859C27BADB12003A72C3 /* ContaListController.swift in Sources */,
 				7527933527BACEDF002648D4 /* SceneDelegate.swift in Sources */,
 			);

@@ -13,3 +13,4 @@ let phones = ["+74953740142", "+79036038662", "74999545205", "79093871696", "8 9
 let mails = ["John@yandex.ru", "cebery@qip.ru", "bugagashenka@gmail.com", "azamat@inbox.com", "petrpetrovich@beer.com"]
 
 
+var personList = Person.getPerson()

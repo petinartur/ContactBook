@@ -49,17 +49,45 @@
             </objects>
             <point key="canvasLocation" x="3032" y="-360"/>
         </scene>
-        <!--View Controller-->
+        <!--Person Info View Controller-->
         <scene sceneID="7dX-Ou-mMg">
             <objects>
-                <viewController id="aLW-Id-en4" sceneMemberID="viewController">
+                <viewController id="aLW-Id-en4" customClass="PersonInfoViewController" customModule="ContactBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VT9-5Y-ZRe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="6xk-U8-UV3">
+                                <rect key="frame" x="20" y="128" width="374" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICe-lD-8BK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z01-Dg-NAR">
+                                        <rect key="frame" x="0.0" y="46.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nD9-h1-lAB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nD9-h1-lAB" firstAttribute="trailing" secondItem="6xk-U8-UV3" secondAttribute="trailing" constant="20" id="tQt-6L-xHU"/>
+                            <constraint firstItem="6xk-U8-UV3" firstAttribute="leading" secondItem="nD9-h1-lAB" secondAttribute="leading" constant="20" id="wAj-l9-byX"/>
+                            <constraint firstItem="6xk-U8-UV3" firstAttribute="top" secondItem="nD9-h1-lAB" secondAttribute="top" constant="40" id="yWv-ZC-uTh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oAA-d4-vO3"/>
+                    <connections>
+                        <outlet property="mailLabel" destination="z01-Dg-NAR" id="d19-zD-Dh6"/>
+                        <outlet property="phoneLabel" destination="ICe-lD-8BK" id="2oz-Co-p0P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZU-tq-feI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

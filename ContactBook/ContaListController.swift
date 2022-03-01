@@ -9,7 +9,7 @@ import UIKit
 
 class ContaListController: UITableViewController {
     
-    private var personList = Person.getPerson()
+//    private var personList = Person.getPerson()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,12 @@ class ContaListController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let person = personList[indexPath.row]
+        personInfoVC.person = person
+    }
 
 
 }
