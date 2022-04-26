@@ -16,6 +16,7 @@
 		7527933F27BACEDF002648D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7527933D27BACEDF002648D4 /* LaunchScreen.storyboard */; };
 		7527934727BAD167002648D4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7527934627BAD167002648D4 /* Person.swift */; };
 		7527934927BAD278002648D4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7527934827BAD278002648D4 /* DataManager.swift */; };
+		75ABCD4F2817C4F600C66956 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ABCD4E2817C4F600C66956 /* PersonListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7527934027BACEDF002648D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7527934627BAD167002648D4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7527934827BAD278002648D4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		75ABCD4E2817C4F600C66956 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				750D859B27BADB12003A72C3 /* ContaListController.swift */,
 				7524532127CE2CF400ECE9D6 /* PersonInfoViewController.swift */,
 				7527933827BACEDF002648D4 /* Main.storyboard */,
+				75ABCD4E2817C4F600C66956 /* PersonListViewController.swift */,
 				7527933B27BACEDF002648D4 /* Assets.xcassets */,
 				7527933D27BACEDF002648D4 /* LaunchScreen.storyboard */,
 				7527934027BACEDF002648D4 /* Info.plist */,
@@ -153,6 +156,7 @@
 				7524532227CE2CF400ECE9D6 /* PersonInfoViewController.swift in Sources */,
 				750D859C27BADB12003A72C3 /* ContaListController.swift in Sources */,
 				7527933527BACEDF002648D4 /* SceneDelegate.swift in Sources */,
+				75ABCD4F2817C4F600C66956 /* PersonListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

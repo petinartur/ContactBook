@@ -34,6 +34,7 @@ class ContaListController: UITableViewController {
         
         return cell
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
