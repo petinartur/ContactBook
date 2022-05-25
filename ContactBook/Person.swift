@@ -18,21 +18,31 @@ struct Person {
 
 
 extension Person {
-    static func getPerson() -> [Person] {
+    static func getContactList() -> [Person] {
         
         var persons: [Person] = []
         
-        for _ in 1...5 {
+        let names = DataManager.shared.names.shuffled()
+        let surnames = DataManager.shared.surnames.shuffled()
+        let emails = DataManager.shared.mails.shuffled()
+        let phones = DataManager.shared.phones.shuffled()
+        
+        let iterationCount = min(names.count, surnames.count, emails.count, phones.count)
+        
+        for index in 0..<iterationCount {
             let person = Person(
-                firstName: names.randomElement() ?? "",
-                secondName: surnames.randomElement() ?? "",
-                phonenumber: phones.randomElement() ?? "",
-                mail: mails.randomElement() ?? ""
+                firstName: names[index],
+                secondName: surnames[index],
+                phonenumber: phones[index],
+                mail: emails[index]
             )
             persons.append(person)
         }
         return persons
-         
     }
-         
+}
+
+enum Contacts: String {
+    case phone = "phone"
+    case email = "tray"
 }

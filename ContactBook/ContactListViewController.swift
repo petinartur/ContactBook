@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ContaListController: UITableViewController {
+class ContactListViewController: UITableViewController {
     
-//    private var personList = Person.getPerson()
+    var persons: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +20,13 @@ class ContaListController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        personList.count
+        persons.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "peronName", for: indexPath)
-        let person = personList[indexPath.row]
+        let person = persons[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
         content.text = person.fullName
@@ -37,11 +37,10 @@ class ContaListController: UITableViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let personInfoVC = segue.destination as? PersonInfoViewController else { return }
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        let person = personList[indexPath.row]
-        personInfoVC.person = person
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let detailVC = segue.destination as! PersonInfoViewController
+            detailVC.person = persons[indexPath.row]
+        }
     }
-
 
 }

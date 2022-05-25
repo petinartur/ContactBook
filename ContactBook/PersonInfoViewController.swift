@@ -11,12 +11,16 @@ class PersonInfoViewController: UIViewController {
 
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var mailLabel: UILabel!
+    
     var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        title = person.fullName
         phoneLabel.text = "phone: \(person.phonenumber)"
         mailLabel.text = "mail: \(person.mail)"
     }
     
 }
+
